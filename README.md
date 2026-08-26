@@ -2,7 +2,7 @@
 
 Welcome to the Multi-Client Chat Application! 🚀
 
-This is a simple chat application built using C socket programming where multiple clients can connect to a single server and communicate with each other.
+A simple chat application built using C socket programming, where multiple clients can connect to a single server and communicate with each other.
 
 Think of it like this:
 
@@ -28,23 +28,22 @@ The server is the main hub of the chat application.
 
 It:
 
-Starts and waits for clients.
-Accepts client connections.
-Handles communication between multiple clients.
-Runs on a specific port.
+🚀 Starts and waits for clients
+🔌 Accepts client connections
+💬 Handles communication between multiple clients
+🔢 Runs on a specific port
 👤 Client
 
 The client is the application that users run to join the chat.
 
 It:
 
-Connects to the server.
-Uses the server IP address and port.
-Allows multiple clients to join the same chat.
+🔌 Connects to the server
+🌐 Uses the server IP address and port
+👥 Allows multiple clients to join the same chat
+🎯 Simple Idea
 
-🎯 Simple idea:
-
-Start the server first → Start multiple clients → Everyone joins the same chat! 🎉
+Start the server → Start multiple clients → Everyone joins the same chat! 🎉
 
 📂 Project Structure
 mutli-chat-app-in-c/
@@ -92,18 +91,18 @@ Use make to build the application:
 make
 
 
-🎉 The server executable will now be available inside the build directory.
+🎉 The server executable is now available inside the build directory.
 
 5️⃣ Start the server
 
-The server requires a port number.
+The server requires a port number:
 
 ./server 8080
 
 
 Here, 8080 is the port used by the chat server.
 
-🚀 Server is now ready for clients!
+🚀 The server is now ready for clients!
 
 👤 Build and Run the Client
 
@@ -119,9 +118,9 @@ cd ..
 
 2️⃣ Remove the existing build
 
-The project uses the same build directory for either the server or client.
+The same build directory is used for either the server or client.
 
-So, remove the previous server build:
+Remove the previous server build:
 
 rm -rf build/
 
@@ -180,7 +179,7 @@ Start the server:
 ./server 8080
 
 
-Now PC 1 is waiting for clients. 👀
+🚀 PC 1 is now waiting for clients.
 
 💻 PC 2 — Start Client 1
 
@@ -191,7 +190,7 @@ Run:
 ./client 8080 192.168.1.10
 
 
-Client 1 is now connected! 🎉
+🎉 Client 1 is now connected!
 
 💻 PC 3 — Start Client 2
 
@@ -216,6 +215,8 @@ Now we have:
 
 
 🎉 Both clients are connected to the same server!
+
+💬 Let the Chat Begin!
 
 Now imagine:
 
@@ -247,24 +248,25 @@ And you can add even more clients:
 
 For the real multi-computer demo:
 
-🖥️ The server computer and client computers should be on the same network.
-🔢 All clients should use the same server port.
-🌐 Clients must use the server computer's IP address, not their own IP.
-🚀 Start the server before starting the clients.
-🔥 Make sure the server port is allowed through the firewall if clients cannot connect.
+🖥️ Server and client computers should be on the same network
+🔢 All clients should use the same server port
+🌐 Clients must use the server computer's IP address
+🚀 Start the server before starting the clients
+🔥 Make sure the server port is allowed through the firewall if clients cannot connect
 🎯 Quick Start
 
-If you just want to try everything on one computer, you can use:
+Want to try everything on one computer? No problem! 😎
 
-Server
+🖥️ Start the Server
 cmake -S . -B build -DBUILD_TYPE=server
 cd build
 make
 ./server 8080
 
 
-Then open another terminal and build the client:
+Then open another terminal.
 
+👤 Start the Client
 cd ..
 rm -rf build/
 cmake -S . -B build -DBUILD_TYPE=client
@@ -279,8 +281,15 @@ For multiple computers, replace 127.0.0.1 with the server computer's IP address.
 
 This project is a great way to learn how:
 
-C + Sockets + TCP/IP = Client-Server Communication 💻🔌🌐
+💻 C
+   +
+🔌 Sockets
+   +
+🌐 TCP/IP
+   =
+💬 Client-Server Communication
+
 
 Start the server, invite some clients, and let the chatting begin! 💬🔥
 
-Happy Coding! 🚀
+🚀 Happy Coding!
