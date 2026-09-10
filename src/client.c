@@ -50,7 +50,7 @@ static void *client_sock_sender (void *arg)
         fgets(buffer, CLIENT_SOCK_RCV_SND_BUFF_SIZE, stdin);
 
         /*thread termination on exit*/
-        if (strcmp (buffer, "exit") == 0)
+        if (strcmp (buffer, "exit\n") == 0)
         {
             client_sock_config.client_disconnected_f = true;
             break;
